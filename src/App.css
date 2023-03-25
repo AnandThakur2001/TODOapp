@@ -1,38 +1,91 @@
-.App {
+nav{
+  background-color: rgb(14, 14, 226);
+  color: white;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+.header{
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 0 10px rgb(0, 0, 0,0.9)
+}
+.header > a{
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+   background-color: rgb(245, 234, 192);
+   width: 100%;
+   margin: 30px;
+   min-height: 100vh;
+   padding: 4vmax 8vmax;
+   box-sizing: border-box;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container > form {
   display: flex;
   flex-direction: column;
+}
+.container > h1{
+  text-align: center;
+  margin: 30px;
+}
+
+.container > form > input,textarea,button{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 10px 0px;
+   font-size: 1.12rem;
+
+} 
+button{
+     border: none;
+     cursor: pointer;
+     background-color:black;
+     color: wheat;
+}
+
+.task{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+
+}
+.task > div{
+  width: 100%;
+}
+.task > span{
+  color: rgb(9, 0, 0);
+}
+.task > button{
+  border-radius: 100%;
+  width: 30px;
+  height:30px;
+  font-size: 1.6rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.task button:hover{
+  background-color: red;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about{
+  background-color: aqua;
+  height: 100vh;
+}
+.contact{
+  background-color: brown;
+  height: 100vh;
 }
